@@ -4,6 +4,7 @@ import useBeatTempo from '../../../hooks/useBeatTempo'
 const BeatDisplay = () => {
   const theme = useTheme()
   const { bpm, beatNow, isStable, confidence, displayBpm } = useBeatTempo()
+  console.log('[BeatDisplay] render, bpm:', bpm, 'displayBpm:', displayBpm)
 
   if (bpm === 0 && displayBpm === 0) return null
 
