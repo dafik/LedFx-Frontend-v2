@@ -32,6 +32,7 @@ const useBeatTempo = () => {
   const stableBpmRef = useRef(0)
 
   const handleBeatUpdate = useCallback((data: BeatUpdateEvent) => {
+    console.log('[useBeatTempo] Received beat_update:', data)
     const now = Date.now()
 
     if (data.bpm > 0) {
