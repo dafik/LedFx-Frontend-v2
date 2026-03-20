@@ -46,10 +46,6 @@ export type IFeatures =
   | 'showVisualisersOnDevicesPage'
 
 const storeFeatures = (set: any) => ({
-
-
-
-
   features: {
     dev: false,
     cloud: false,
