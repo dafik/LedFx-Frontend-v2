@@ -30,6 +30,7 @@ import { exitAndroidApp, isAndroidApp } from '../../FireTv/android.bridge'
 import CrashButton from '../../CrashButton'
 import BladeIcon from '../../Icons/BladeIcon/BladeIcon'
 import useSongDetector from '../../../hooks/useSongDetector'
+import BeatDisplay from './BeatDisplay'
 import LeftButtons from './LeftButtons'
 import Title from './Title'
 import TopBarMenu from './TopBarMenu'
@@ -427,6 +428,7 @@ const TopBar = () => {
                       </IconButton>
                     </Tooltip>
                   )}
+                  {features.beatTempo && <BeatDisplay />}
                   <GlobalActionBar className="hideHd" />
                 </>
               )}

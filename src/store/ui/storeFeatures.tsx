@@ -43,6 +43,7 @@ export type IFeatures =
   | 'showVisualiserInBottomBar'
   | 'bgvisualiser'
   | 'showVisualisersOnDevicesPage'
+  | 'beatTempo'
 
 const storeFeatures = (set: any) => ({
   features: {
@@ -86,7 +87,8 @@ const storeFeatures = (set: any) => ({
     firetv: false,
     showVisualiserInBottomBar: false,
     bgvisualiser: false,
-    showVisualisersOnDevicesPage: false
+    showVisualisersOnDevicesPage: false,
+    beatTempo: false
   },
   showFeatures: {
     dev: false,
@@ -129,7 +131,8 @@ const storeFeatures = (set: any) => ({
     firetv: false,
     showVisualiserInBottomBar: false,
     bgvisualiser: false,
-    showVisualisersOnDevicesPage: false
+    showVisualisersOnDevicesPage: false,
+    beatTempo: true
   },
   setFeatures: (feat: IFeatures, use: boolean): void =>
     set(

@@ -90,6 +90,12 @@ const Uncategorized = () => {
       <SettingsRow alpha title="Log Filtering">
         <LogColorFilterSelect />
       </SettingsRow>
+      <SettingsRow
+        alpha
+        title="Beat Detection"
+        checked={features.beatTempo}
+        onChange={() => setFeatures('beatTempo', !features.beatTempo)}
+      />
     </>
   )
 }
