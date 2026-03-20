@@ -69,7 +69,6 @@ const TopBar = () => {
   const setDialogOpen = useStore((state) => state.setDialogOpen)
   const setIsLogged = useStore((state) => state.setIsLogged)
   const features = useStore((state) => state.features)
-  console.log('[BarTop] features.beatTempo:', features?.beatTempo)
   const platform = useStore((state) => state.platform)
   const sslEnabled = isElectron()
     ? window.localStorage.getItem('ledfx-ssl-enabled') === 'true'
